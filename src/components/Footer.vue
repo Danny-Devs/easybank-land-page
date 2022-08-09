@@ -54,7 +54,7 @@
       <button mb-6 px-7 sm:px-4 md:px-6 py-3 sm:py-2 rounded-full class="bg-gradient-to-r from-[#33D35E] to-[#2AB6D9] dark:bg-gradient-to-r from-[#04c939] to-[#059ec5]" sm:text-sm>
         Request Invite
       </button>
-      <p text-sm text-gray-300>
+      <p text-xs text-gray-300>
         © Easybank. All Rights Reserved
       </p>
     </div>

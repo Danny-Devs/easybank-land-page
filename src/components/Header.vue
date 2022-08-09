@@ -12,14 +12,11 @@ const isMobileMenuOpen = ref(false)
 const hamburgerEl = ref(null)
 
 const handleHamburgerClick = () => {
-  console.log('hamburger click')
   isDisabled.value = !isDisabled.value
   isMobileMenuOpen.value = !isMobileMenuOpen.value
-  console.log(isMobileMenuOpen.value)
 }
 
 onClickOutside(mobileMenuEl, (event) => {
-  console.log('click outside')
   if (event.target.value !== hamburgerEl.value)
     isMobileMenuOpen.value = false
   else isMobileMenuOpen.value = true
@@ -36,7 +33,7 @@ onClickOutside(mobileMenuEl, (event) => {
     </div>
 
     <!-- group 2 -->
-    <nav v-if="smAndLarger" flex gap-2 md:gap-4 class="text-[#9597A5] dark:text-gray-700">
+    <nav v-if="smAndLarger" flex gap-2 md:gap-4 class="text-[#9597A5] dark:text-gray-200" sm:text-sm>
       <router-link to="/">
         Home
       </router-link>
